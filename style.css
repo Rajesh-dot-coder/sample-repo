@@ -1,0 +1,254 @@
+html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: #b5eab4;
+      }
+      @keyframes fadeUp {
+        0% {
+          opacity: 0.1;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      #section {
+        margin-left: 515px;
+        max-width: 1000px;
+        text-align: center;
+        padding: 6rem 2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 50px;
+        animation: fadeUp 1.8s ease-in-out;
+        animation-delay: 0.3s;
+        background: linear-gradient(to right, rgb(79, 255, 99), rgb(0, 182, 6));
+        color: white;
+        border-radius: 20px;
+        margin-top: 350px;
+      }
+      header {
+        padding: 10px;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        background-color: rgb(1, 28, 5);
+        color: rgb(33, 212, 24);
+      }
+      header h1 {
+        margin-left: 20px;
+      }
+      ul {
+        margin-top: 50px;
+        padding: 20px;
+      }
+      li {
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        display: inline;
+        margin: 10px;
+        padding: 25px;
+      }
+      nav {
+        margin-left: 1100px;
+      }
+      li:hover {
+        color: rgb(33, 212, 24);
+        text-decoration: underline;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      section {
+        width: 90%;
+      }
+
+      .section1 {
+        padding: 4rem 2rem;
+        height: 100vh;
+        margin: auto;
+        animation: fadeIn 1s ease-in;
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        background-color: #ffffff;
+      }
+
+      .skillsdiv {
+        margin-top: 150px;
+      }
+
+      .skillsdiv legend {
+        font-size: 30px;
+        color: black;
+        background: none;
+        border: none;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .grid-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .grid-item p {
+        margin-top: 8px;
+        font-weight: bold;
+        color: black;
+      }
+      #about {
+        border: none;
+        margin: none;
+        padding-top: 150px;
+        align-items: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 30px;
+      }
+      .project-card {
+        margin-top: 30px;
+        background-color: white;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        font-size: 24px;
+      }
+
+      .project-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+      #projects {
+        text-align: center;
+        background-color: #ffffff;
+        padding: 4rem 2rem;
+        margin-left: 80.2px;
+        margin-bottom: 32px;
+        width: 90%;
+        height: 100vh;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+      #projects h2 {
+        font-size: 40px; /* Made larger */
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      form {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      input,
+      textarea {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        width: 100%;
+        transition: border-color 0.3s ease;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color:  rgb(33, 212, 24);
+        outline: none;
+      }
+
+      button {
+        background-color: #0f172a;
+        color: white;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color:  rgb(33, 212, 24);
+      }
+      #blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the content of the section */
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 4rem 2rem;
+      }
+
+      .blog-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 130px;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 ; /* Center the blog container */
+      }
+
+      .blog-card {
+        gap: 100px;
+        width:400px;
+        padding: 15px;
+        background-color: rgba(135, 246, 115, 0.433);
+        border: 2px solid rgb(199, 241, 176);
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .blog-title {
+        font-size: 30px; /* Increase the font size of the title */
+        margin-bottom: 10px;
+      }
+
+      .blog-date {
+        font-size: 16px; /* Keep the date size smaller */
+        color: #ccc;
+        margin-bottom: 15px;
+      }
+
+      .blog-content {
+        font-size: 14px; /* Increase the content font size */
+        line-height: 1.6;
+        color: black;
+      }
+      #footer {
+        color: white;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 20px;
+      }
